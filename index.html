@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Language</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3f2f1;
+    padding-left: 7rem;
+    padding-top: 5rem;
+}
+
+.language-container {
+    background-color: #bf4342;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 400px;
+  width: 50%;
+  border-radius: 25px;
+  padding: 30px;
+  border: 10px solid #0e0e0d;
+  box-shadow: 0 5px 20px rgba(236, 232, 232, 0.4);
+  margin-left: 500px;
+  margin-top: 150px;
+}
+
+.language-list {
+    list-style: none;
+    align-items: center;
+   
+}
+
+.language-option {
+    text-decoration: none;
+    color: #f7f3f3;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 3px solid #f1e7e7;
+    border-radius: 5px;
+    display: inline-block;
+    align-items: center;
+}
+
+.language-option:hover {
+    background-color: #19cb22;
+}
+.s{
+    color: #f0eaea;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="language-container" id="home">
+        <h1 class="s">Select Your Language</h1>
+        <div id="google_ele"></select></div>
+  <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+  <script>
+      function loadGoogleTranslate(){
+          new google.translate.TranslateElement("google_ele");
+      }
+  </script>
+   <a href="landingp.html"  style="background-color: #62abab; color: #fff;" class="btn btn-outline-danger">Continue</a>
+    </div>
+   
+
+    
+   
+  
+</body>
+
+</html>
